@@ -1,0 +1,12 @@
+---
+import { Markdown } from 'astro/components';
+const { frontmatter, content } = Astro.props;
+---
+
+<section class="bg-green-50 min-h-screen py-16 px-4">
+  <div class="max-w-3xl mx-auto bg-white shadow-lg rounded-xl p-8">
+    <h1 class="text-4xl font-bold text-green-900 mb-2">{frontmatter.title}</h1>
+    <p class="text-sm text-gray-500 mb-6">{frontmatter.date}</p>
+    <Markdown content={content} class="prose prose-green max-w-none" />
+  </div>
+</section>
