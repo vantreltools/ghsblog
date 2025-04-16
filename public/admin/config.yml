@@ -4,6 +4,8 @@ backend:
 
 media_folder: "/public/images/uploads"
 public_folder: "/images/uploads"
+repo: levnorth/ghsblog
+
 
 collections:
   - name: "blog"
