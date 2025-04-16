@@ -1,11 +1,11 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: levnorth/ghsblog
   branch: main
+  auth_scope: repo
 
 media_folder: "/public/images/uploads"
 public_folder: "/images/uploads"
-repo: levnorth/ghsblog.git
-
 
 collections:
   - name: "blog"
